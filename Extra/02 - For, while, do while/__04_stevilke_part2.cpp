@@ -5,13 +5,10 @@
 using namespace std;
 
 /**
-Program naj razstavi s parametrom vneseno število na posamezne števke. Vsako števko podanega števila naj 
-izpiše v drugi vrstici. Npr.:
->Vnesi število: 2319
-2
-3
-1
-9
+//npcpp ki bo bral znakes tipkovnice dokler uporabnik ne bo uponesel "." program naj izpiše koliko znakov,
+//koliko je bilo vnešenih samoglasnikov zha vsak samoglasnik posebej, koliko je bilo soglasnikov ter koliko je bilo
+//vnešenih ostalih in pika se ne šteje.
+//program implementirajte s pomočjo do while ter switch.
 
 */
 
