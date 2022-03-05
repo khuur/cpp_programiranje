@@ -25,6 +25,8 @@ int main() {
 	f = (c * 1.8) + 32;
 	
 	cout << "Temperatura v fahrenheitih je: " << round(f) <<  endl;
+
+	// TODO Pretvorba še v Kelvine
 		
 	return 0;
 }
