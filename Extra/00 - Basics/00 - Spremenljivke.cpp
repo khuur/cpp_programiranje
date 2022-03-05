@@ -5,6 +5,12 @@ bool ali_je_moski = true;
 
 int stevilo_otrok = 5;
 
+
+int a;
+a = 5;
+
+char crka1, crka2, crka3;
+
 //------------------------------------------------------------
 
 #include <iostream>

@@ -49,7 +49,10 @@ int main() {
     cout << "uporaba zunanjih knjiznic " << endl;
     cout << "-------------" << endl;
     cout << pow(2, 10) << endl;
+	cout << stqr(9) << endl;
 
+
+	cout << 2.4555554 << setprecision2 << endl;
     cout << "-------------" << endl;
 
     int ime_spremenljivke = 5;
@@ -57,6 +60,12 @@ int main() {
     int starost = 24;
 
     float visina = 1.88;
+	
+	char crka = 'A';
+	
+	crka = crka + 1;
+	
+	cout << "crka : " << crka << endl;
 
     bool moski = true;
 
