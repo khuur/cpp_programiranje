@@ -5,26 +5,36 @@ using namespace std;
 
 int main() {
 		
+	// deklariramo spremenljivke
+	float fahrenheit, celzije, kelvini;
 	
-	float f, c;
-	
-	cout << "Vpisi temperaturo v fahrenheitih: " << endl;
-	cin >> f;
+	// vnesemo fahrenheite
+	cout << "Vpisi temperaturo v fahrenheitih: ";
+	cin >> fahrenheit;
 	
 	
 	// tukaj pretvorimo iz fahrenheitih v celzije
-	c = ((f - 32) * (5/9.0));
-	cout << "Temperatura v celzijah je: " << round(c) <<  endl;
+	// pomembno je računati s float številom 9.0 (lahko je tudi drugo)
+	celzije = ((fahrenheit - 32) * (5/9.0));
+	// pretvorimo iz celzij v kelvine
+	kelvini = celzije + 273.15;
+
+	cout << "Temperatura v celzijah je: " << round(celzije) << endl;
+	cout << "Temperatura v kelvinih je: " << round(kelvini) << endl;
 	
 	cout << "----------------------" << endl;
 	
-	cout << "Vpisi temperaturo v celzijah: " << endl;
-	cin >> c;
+	// vnesemo celzije
+	cout << "Vpisi temperaturo v celzijah: ";
+	cin >> celzije;
 	
-	// tukej pretvorimo iz celzij v fahtrenheite
-	f = (c * 1.8) + 32;
-	
-	cout << "Temperatura v fahrenheitih je: " << round(f) <<  endl;
+	// tukej pretvorimo iz celzij v fahrenheite
+	fahrenheit = (celzije * 1.8) + 32;
+	// pretvorimo iz celzij v kelvine
+	kelvini = celzije + 273.15;
+
+	cout << "Temperatura v fahrenheitih je: " << round(fahrenheit) << endl;
+	cout << "Temperatura v kelvinih je: " << round(kelvini) << endl;
 
 	// TODO Pretvorba še v Kelvine
 		

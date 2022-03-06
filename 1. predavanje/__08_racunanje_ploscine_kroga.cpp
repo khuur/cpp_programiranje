@@ -1,22 +1,46 @@
+/**
+8.	Napiöite program, ki bo izraËunal povröino kroga.
+    Program naj (1) vpraöa po radiju kroga, ki naj ga uporabnik vnese s pomoËjo tipkovnice,
+    (2) zraËuna povröino kroga po formuli povröina = pi * radij * radij in
+    (3) izpiöe rezultat.
+
+
+    *bonus: Uporabnik ima moûnost povedat na kok decimalk mu zaokroûimo
+    **bonus: PI importaö iz knjiûnice vs ti napiöeö 3.14159
+
+*/
 #include<iostream>
+#include <cmath>
+#include <iomanip>
+
+// definiramo svoj pi
+#define PI 3.14159
 
 using namespace std;
 
-/**
-8.	Napi≈°ite program, ki bo izraƒçunal povr≈°ino kroga.
-    Program naj (1) vpra≈°a po radiju kroga, ki naj ga uporabnik vnese s pomoƒçjo tipkovnica,
-    (2) zraƒçuna povr≈°ino kroga po formuli povr≈°ina = pi * radij * radij in 
-    (3) izpi≈°e rezultat.
-
-
-    *bonus: Uporanbik ima mo≈ænost povedat na kok decimalk mu zaokro≈æimo
-    **bonus: PI importa≈° iz knji≈ænice vs ti napi≈°e≈° 3.14159
-
-*/
 
 int main() {
 
-    // TODO 
+    // deklariramo spremenljivke
+    float povrsina, radij;
+    int decimalke;
 
-    return 1;
+    // vnesemo radij kroga
+    cout << "Vnesi radij kroga: ";
+    cin >> radij;
+
+    // vnesemo ötevilo decimalk
+    cout << "Vnesi stevilo decimalk: ";
+    cin >> decimalke;
+
+    // izraËunamo povröino z naöim Pi
+    povrsina = radij * radij * PI;
+    // izraËunamo povröino s Pi iz knjiûnice cmath
+    povrsina = radij * radij * M_PI;
+
+    cout << "Povrsina kroga je: " << povrsina << endl;
+    // izpiöemo povröino z doloËenimi decimalkami
+    cout << "Povrsina kroga je: " << setprecision(decimalke) << fixed << povrsina << endl;
+
+    return 0;
 }
