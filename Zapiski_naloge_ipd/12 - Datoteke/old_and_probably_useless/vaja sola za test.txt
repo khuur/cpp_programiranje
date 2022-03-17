@@ -1,0 +1,79 @@
+#include <iostream>
+#include <string>
+#include <stdio.h>
+#include <conio.h>
+#include <fstream>
+using namespace std;
+fstream file;
+
+struct Kvader
+{
+    int a,b,c;
+    char barva;
+};
+void izpis( string input)
+{   ifstream dat;
+    Kvader kv;
+    dat.open(input.c_str(), ios::binary);
+    if(dat.is_open())
+    {dat.read((char*)&kv,sizeof(kv));
+        while(dat.eof()!=1)
+       {cout<<"A:" <<kv.a<<endl;
+        cout<<"B:" <<kv.b<<endl;
+        cout<<"C:" <<kv.c<<endl;
+        cout<<"Barva:" <<kv.barva<<endl<<endl;
+    dat.read((char*)&kv,sizeof(kv));
+
+}dat.close();}
+    else cout<<"Datoteka ne osbtaja!!"<<endl;
+    }
+
+short stevec(string input)
+{   ifstream dat;
+    Kvader kv;
+    short stev=0;
+    dat.open(input.c_str(), ios::binary);
+    if(dat.is_open())
+    {dat.read((char*)&kv,sizeof(kv));
+        while(dat.eof()!=1)
+        {   stev++;
+dat.read((char*)&kv,sizeof(kv));
+    }}
+        return stev;
+}
+/* Funkcija, ki spremeni podatke n-tega kvadra na datoteki tako, da bodo stranice imele vrednost 10, barva bo B.
+  Pri tem naj b n vhodni parameter funkcije, funkcija pa naj preverja, èe je ta pravilen
+( n ne sme biti manjspi od 1 in veèji od stevila kvadrov v datoteki!)
+*/
+
+void zamenjaj(string input, int n)
+{
+   fstream dat;
+    n=n-1;
+        Kvader kv;
+        int kp, kb;
+        dat.open(input.c_str(), ios::binary |ios::out|
+                 ios::in);
+        if(dat.is_open())
+          {
+            dat.seekp(n*sizeof(Kvader));
+            kv.a=10;
+            kv.b=10;
+            kv.c=10;
+            kv.barva='B';
+            dat.write((char*)&kv, sizeof(Kvader));
+
+}dat.close();
+}
+//da se postavi na predzadnje mesto in doda 2 nova kvadra
+int main()
+{
+    izpis("C:\\Users\\Uporabnik\\Desktop\\kvadri.bin");
+    int a=stevec("C:\\Users\\Uporabnik\\Desktop\\kvadri.bin");
+    zamenjaj ("C:\\Users\\Uporabnik\\Desktop\\kvadri.bin",6);
+    cout<<"Je "<<a<<" kvadrov."<<endl;
+   izpis("C:\\Users\\Uporabnik\\Desktop\\kvadri.bin");
+    return 0;
+}
+
+//C:\\Users\\Uporabnik\\Desktop\\kvadri

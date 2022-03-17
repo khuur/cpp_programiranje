@@ -1,0 +1,86 @@
+#include <iostream>
+#include <conio.h>
+#include <cstdlib>
+#include <cstdio>
+#include <string>
+#include <stdio.h>
+#include <time.h>
+#include <fstream>
+/* Vpiši v datoteko ime priimek petih uèencev in èe so napisani z malo
+  jih spremeni v veliko
+
+  */
+using namespace std;
+
+
+string path="C:/Qt/vajax.txt";
+fstream file;
+struct Ucenec
+   {
+    char  ime[20] ;
+    char  priimek[20] ;
+
+} dijak[2];
+void vpisi (string path)
+{
+    file.open(path.c_str(), ios::out);
+            for(int i=0;i<2;i++)
+    {cin>>dijak[i].ime;
+     cin>>dijak[i].priimek;
+     file<<dijak[i].ime;
+     file<<" ";
+     file<<dijak[i].priimek;
+     file<<endl;
+    }
+    file.close();
+}
+void preberi(string path)
+{file.open(path.c_str(), ios::in);
+        for(int i=0;i<2;i++)
+{file>>dijak[i].ime;
+        cout<<"Ime in priimek dijaka: ";
+ file>>dijak[i].priimek;
+ cout<<dijak[i].ime<<" "<<dijak[i].priimek<<endl;
+}
+file.close();
+}
+void replace(string path)
+{ file.open(path.c_str(), ios::in|ios::out);
+    char x;
+    //char y[20];
+    file.seekg(0);
+    file.seekp(0);
+    int i=0, pos=0;
+    int stevilo;
+    while(file.eof()!=1)
+    { x=file.get();
+        if(x==' ')
+      {
+            file>>x;
+            for(stevilo=0;stevilo<20;stevilo++)
+            {if(dijak[i].priimek[stevilo]==' ')break;
+
+            }pos=(file.tellg()-stevilo+1);
+            cout<<endl<<endl<<stevilo<<endl<<endl;
+        file.seekp(pos-1);
+        //x=file.get();
+        x=toupper(x);
+        cout<<endl<<x<<endl<<endl;
+        //file.put(x);
+        file<<x;
+
+
+       }
+
+    }
+   file.close();
+}
+
+int main()
+{   vpisi(path);
+    preberi(path);
+    replace(path);
+    cout<<endl<<endl;
+    preberi(path);
+    return 0;
+}

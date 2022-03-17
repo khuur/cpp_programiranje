@@ -1,0 +1,80 @@
+/*1.	NPCPP, ki bo
+a.	S pomoèjo funkcije nakljucna napolnil datoteko s 100 nakljuènimi malimi èrkami angleške abecede, ter bo tako shranjeno datoteko shranil
+b.	S pomocjo funkcije izbrisi izbrisal iz datoteke use crke, ki ne sodijo v slovensko abecedo izbrisal (prepisovanje)
+c.	S pomoèjo funkcije spremeni spremenil vse samoglasnike na datoteki v zvezdice s pomoèjo funkcij za direktni dostop (kazalci)
+
+2.	NPCPP, ki bo
+a.	Omogoèil vnos podatkov o vozilu na binarno datoteko. Pri èemer hranimo: serijska stevilka, model, letnik, cena.
+    Vnos na dat. Naj se konèa takrat, ko uporabnik za serijsko stevilko vnese vrednost 0.
+b.	S pomoèjo funcije povpreèje izraèunal povpreèno starost vseh avtomobilov, katerih model Golf
+c.	S pomoèjo funkcije briši izbrisal vse tiste avtomobile, ki so starejši od 20 let. Pri brisanju zopet uporabite  direktni dostop
+*/
+#include <iostream>
+#include <conio.h>
+#include <cstdlib>
+#include <string>
+#include <stdio.h>
+#include <time.h>
+#include <fstream>
+using namespace std;
+fstream file;
+string path = "C:\\Qt\\vaja\\kurac.bin";
+string golf ="golf";
+struct vozilo
+{   long long serijska_stevilka;
+    string model;
+    short letnik;
+    float cena;
+    };
+
+void vnos()
+{vozilo avto;
+    file.open(path.c_str(), ios::out|ios::binary);
+    cout<<"Vpisi serijsko stevilko"<<endl;
+    cin>>avto.serijska_stevilka;
+    while(avto.serijska_stevilka!=0)
+     {  cout<<"Vpisi model"<<endl;
+        fflush(stdin);
+        getline(cin,avto.model);
+        fflush(stdin);
+        cout<<"Vpisi letnik "<<endl;
+        cin>>avto.letnik;
+        cout<<"Vpisi ceno"<<endl;
+        cin>>avto.cena;
+        file.write((char*)&avto, sizeof(avto));
+        cout<<"Vpisi serijsko stevilko"<<endl;
+        cin>>avto.serijska_stevilka;
+    }
+    file.close();
+}
+float povprecje()
+{ vozilo avto;
+    float povp=0; short i=0;
+    file.open(path.c_str(), ios::in|ios::binary);
+    while(file.eof()!=1)
+    {  file.read((char*)&avto, sizeof(avto));
+        if(avto.model==golf)
+        {i++;
+         povp+=avto.letnik;
+         cout<<povp<<endl<<endl;
+         cout<<"I= "<<i<<endl;
+        }
+
+    }
+    file.close();
+    cout<<"KURAC";
+    float kurac=0;
+    kurac=povp/i;
+    return kurac;
+
+
+}
+int main()
+{   vnos();
+    float x=0;
+    x=povprecje();
+    cout<<x<<endl;
+
+
+    return 0;
+}
