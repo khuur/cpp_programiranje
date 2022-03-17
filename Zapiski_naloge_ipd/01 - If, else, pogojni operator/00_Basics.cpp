@@ -45,6 +45,8 @@ int main() {
 	// Logični operatorji = [ !, &&, ||]
 	// TODO - Kris: primeri uporabe
 	
+	// 00_01_pozdrav_glede_na_uro.cpp
+	
 	//------------------------------------------------------------------------------
 		
 	cout << "-------------" << endl;
