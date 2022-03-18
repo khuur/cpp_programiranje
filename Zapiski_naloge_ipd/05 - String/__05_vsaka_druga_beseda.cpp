@@ -1,0 +1,1 @@
+Izpiše vsako drugo besedo iz nekega besedila, ki je splittano s presledki.
