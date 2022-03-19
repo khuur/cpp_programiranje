@@ -36,8 +36,6 @@ int main() {
 
 	cout << "Temperatura v fahrenheitih je: " << round(fahrenheit) << endl;
 	cout << "Temperatura v kelvinih je: " << round(kelvini) << endl;
-
-	// TODO Pretvorba še v Kelvine
 		
 	return 0;
 }
