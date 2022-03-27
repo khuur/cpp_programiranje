@@ -6,6 +6,24 @@ using namespace std;
 
 int main() {
 	
+	
+	cout << "Abrakadabra" << endl;
+	cout << "Abrakadabra" << endl;
+	cout << "Abrakadabra" << endl;
+	cout << "Abrakadabra" << endl;
+	cout << "Abrakadabra" << endl;
+	cout << "Abrakadabra" << endl;
+	cout << "Abrakadabra" << endl;
+	cout << "Abrakadabra" << endl;
+	cout << "Abrakadabra" << endl;
+	
+	
+	
+	
+	
+	
+	
+	
 	// for loop to 10
 	for(int i = 0; i < 10; i++){
 		cout << i << endl;
@@ -29,7 +47,7 @@ int main() {
 
 
 	// break, continue;
-	// while(true) {}
+	// while(true) {} 09
 	
 	
 	for(int i = 10; i > 0; i--) {
