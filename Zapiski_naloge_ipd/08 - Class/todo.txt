@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+
+
+
+how to copy konstruktor
+virtualne funkcije
+čiste virtualne funkcije
+
+dedovanje
+private, protected
