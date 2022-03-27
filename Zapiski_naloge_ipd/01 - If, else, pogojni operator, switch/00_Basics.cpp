@@ -68,6 +68,29 @@ int main() {
 	
 	//------------------------------------------------------------------------------
 	
+	cout << "-------------" << endl;
+    cout << "switch stavek" << endl;
+    cout << "-------------" << endl;
+	
+	char spol = 'M';
+	
+	switch(spol) {
+	case 'M':
+		cout << "Pozdravljen moski" << endl;
+		break;
+	case 'Z':
+		cout << "Pozdravljeno dekle" << endl;
+		break;
+	default:
+		cout << "Pozdravljen, karkoli že si" << endl;
+		break; // i think da je to useless, ampak nobenmu zares ne škodi;
+}
+
+	
+	
+	
+	//------------------------------------------------------------------------------
+	
 	
 
     return 0;
