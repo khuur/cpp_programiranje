@@ -3,50 +3,64 @@
 using namespace std;
 
 class Ulomek {
-    float stevec, imenovalec;
+
     public:
-        void sestevek(Ulomek drugi);
-    float odstej(Ulomek drugi);
-    void zmnozi(Ulomek drugi) {
-        cout << "zmnozek: " << ((stevec * drugi.stevec) / (imenovalec * drugi.imenovalec)) << endl;
-    };
-    void deli(Ulomek drugi) {
-        cout << "delitev:" << ((stevec * drugi.imenovalec) / (imenovalec * drugi.stevec)) << endl;
-    };
-    Ulomek(int s, int i) //nisem našel pravega naèin, da bi bral v konstruktorju, vrednosti doloèam v main
-    {
-        imenovalec = i;
-        stevec = s;
+        float imenovalec;
+        float stevec;
+
+
+    Ulomek() {
+        stevec = 0;
+        imenovalec = 1;
     }
+
+    Ulomek(float s, float i) {
+        stevec = s;
+        imenovalec = i;
+    }
+
+    ~Ulomek() {
+        cout << "Ej, brisem iz spomina" << endl;
+    }
+
+    float getValue() {
+        return stevec / imenovalec;
+    }
+
+    float sestej(Ulomek drugi);
+
 };
 
-void Ulomek::sestevek(Ulomek drugi) {
-    float skupni = imenovalec, vsota = (stevec + drugi.stevec);
-    float sestevek;
-    if (imenovalec != drugi.imenovalec) {
-        skupni = imenovalec * drugi.imenovalec;
-        vsota = ((stevec * drugi.imenovalec) + (drugi.stevec * imenovalec));
+float Ulomek::sestej(Ulomek drugi){
+
+    float skupni_imenovalec;
+    float skupni_stevec;
+
+    if(drugi.imenovalec == imenovalec) {
+        skupni_stevec = stevec + drugi.stevec;
+        skupni_imenovalec = imenovalec;
+    } else {
+        skupni_stevec = (stevec * drugi.imenovalec) + (drugi.stevec * imenovalec);
+        skupni_imenovalec = (drugi.imenovalec * imenovalec);
     }
-
-    sestevek = vsota / skupni;
-    cout << "sestevek je: " << sestevek << endl;
-    cout << "novi ulomek je;" << endl << vsota << endl << "-" << endl << skupni << endl;
+    
+    return skupni_stevec / skupni_imenovalec;
 }
 
-float Ulomek::odstej(Ulomek drugi) {
-    float a = 0, b = 0;
-    a = stevec / imenovalec;
-    b = drugi.stevec / drugi.imenovalec;
-    return a - b;
-}
 
 int main() {
-    Ulomek prvi(4.0, 2.0);
-    Ulomek drugi(2.0, 3.0);
-    prvi.zmnozi(drugi);
-    prvi.deli(drugi);
-    float razlika = prvi.odstej(drugi);
-    cout << "razlika: " << razlika << endl;
-    prvi.sestevek(drugi);
+
+    Ulomek moj_ulomek(1.0, 4.0);
+
+    cout << moj_ulomek.stevec << endl;
+    cout << moj_ulomek.imenovalec << endl;
+
+    cout << moj_ulomek.getValue() << endl;
+
+    Ulomek drug_ulomek(1.0 , 3.0);
+
+    cout << moj_ulomek.sestej(drug_ulomek) << endl;
+
+
     return 0;
 }

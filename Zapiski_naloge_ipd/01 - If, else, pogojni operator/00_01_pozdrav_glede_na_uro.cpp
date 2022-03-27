@@ -4,7 +4,7 @@
 using namespace std;
 int main() {
 
-    int ura = 18;
+    int ura = 8;
 
     if (ura < 9) {
         cout << "Dobro jutro" << endl;

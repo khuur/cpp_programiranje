@@ -1,19 +1,10 @@
-#include <cstring>
-
-#include <string>
-
-#include <cmath>
-
-#include <ctime>
-
-#include <cstdlib>
-
 #include <iostream>
+#include <string>
+#include <cmath>
 
 using namespace std;
 
 int main() {
-
 	
 	// for loop to 10
 	for(int i = 0; i < 10; i++){
@@ -26,7 +17,6 @@ int main() {
 		cout << i << endl;
 		i++;
 	}
-
 	
 	// do while loop to 10
 	int i = 0;
@@ -48,7 +38,6 @@ int main() {
 			break;
 		}
 	}
-
 
 
 	return 1;
