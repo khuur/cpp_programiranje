@@ -1,16 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-how to copy konstruktor
-virtualne funkcije
-čiste virtualne funkcije
-
-dedovanje
-private, protected
+virtual function
+čista virtualna funkcija
+abstract function 
+kopirni konstruktor
+how to trigger destruct
