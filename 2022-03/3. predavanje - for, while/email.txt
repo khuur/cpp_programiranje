@@ -1,0 +1,29 @@
+Hey!
+
+Včeraj smo se spoznali z zankami.
+Najprej sem vam pokazal osnove zank in sicer while  in for in nato smo naredili par vaj.
+
+Prva vaja je bila ta, da smo na enkrat 10x izpisali "Abrakadabra".
+Naslednja vaja je bila ta, da je uporabnik vnašal števila in dokler ni vpisal števila 0, se je vse skupaj seštevalo v vsoto, ki se nam je na koncu izpisala.
+Za vašo vajo sem vam dal, da naredite enak program, samo s to razliko, da sešteva samo soda števila.
+Po tej vaji smo naredili še nalogo, kjer izpisujemo Collatzovo zaporedje.
+
+Spet predlagam, da greste ponovno skozi vaje in jih poizkusite rešiti sami.
+
+Imam pa še par domačih nalog:
+
+1. Uporabnik naj vnaša števila in ko vnese 0, naj mu izpiše največje število, ki ga je do sedaj vnesel. (Pazite, pri negativnih številih)
+*1.1. Naj izpiše največji in drugo največje število
+
+2. Napišite program, ki bo simuliral hitro blagajno v trgovini. Blagajna naj beleži vsoto, ki jo bo kupec na koncu plačal in tudi povprečno vrednost izdelka.
+
+*3. Program naj izpiše katero število med 1 in 20 ima najdaljše Collatzovo zaporedje
+
+Mislim, da je to to.
+Če sem pa kaj pozabil pripeti oz. povedati, me pa le dopolnite :)
+
+Še zadnjič se vidimo v sredo ob 18:00 v III / 3 ali pa preko  https://meet.google.com/jzd-bmnt-mob
+
+https://github.com/khuur/cpp_programiranje
+
+LP Kristjan 

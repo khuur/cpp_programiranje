@@ -1,0 +1,42 @@
+Hellou :)
+
+Na včerajšnjih predavanjih smo spoznali pogojni stavek (if + if else + if else if else).
+Spoznali smo tudi logične operatorje kot so 
+
+a || b, kar pomeni a ALI b (en izmed pogojev more biti resničen)
+a && b, kar pomeni a IN b (oba pogoja morata biti resnična)
+!a, kar pomeni NE a (torej, če je bil prej true, je sedaj false)
+
+Naredili smo par nalog in sicer:
+
+1. Pozdrav glede na uro
+    do 9ih je "dobro jutro"
+    od 9ih do 17ih je "dober dan"
+    od 17ih naprej je "dober večer".
+    
+    Kasneje smo pokrili tudi primer, da ne rečeš "dober večer", če je ura več kot 22 in manj kot 6.
+
+2. Vneseš oceno v obliki številke in ti program vrne odgovor v obliki texta 
+(1 => "dobil si nezadostno")
+
+3. Uporabnik vnese x in y koordinato in program vrne v katerem kvadrantu se ta točka nahaja
+
+Za domačo nalogo imam pa trenutno samo eno nalogo na zalogi, ki bi bila relativno zanimiva:
+
+1. Uporabnik vnese dve števili in potem še katero operacijo naj izvede.
+     Primer: Vnesite 1, da boste zgornji števili sešteli, vnesite 2, da boste zgornji števili odšteli...
+
+Bonus: Naredite tako, da bo uporabnik dejansko vnesel matematično funkcijo, ki se more izvesti ( +, -, *, / )
+
+
+V primeru, da imate vprašanja, kar napišite email pa vam ga odgovorim kolikor hitro bom lahko.
+
+Prilagam tudi povezavo do mojega githuba, kjer imam vse zapiske in naloge, ki sem jih pripravil (ni še končna oblika, tko da bodite prizanesljivi :) )
+PPTji se nahajajo v mapi "Prezentacije".
+
+Dobimo se naslednji ponedeljek ob 18:00 v III / 3 učilnici oz online na povezavi: 
+https://meet.google.com/jzd-bmnt-mob
+
+Lep preostanek tedna vam želim :)
+
+LP Kristjan

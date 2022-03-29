@@ -1,0 +1,31 @@
+Hellou :)
+
+V priponki vam pošiljam še malce bolj podrobno razlago kar smo danes jemali.
+
+Omenil sem tudi, da vam bom dal domače naloge, ampak z današnjim znanjem, vam ne morem dat kakšnim extra zanimivih. Domače naloge so neobvezne, ampak vam z veseljem priskočim na pomoč, če se vam bo kje kej zataknilo.
+
+Predlagam vam, da probate še enkrat rešit vse naloge, ki smo jih danes skupaj rešili na predavanji in se nato lotite še tistih, ki so nove oz. dodatne.
+
+Naloge, ki smo jih že rešili: 
+1. Pretvarjanje iz celzij v kelvine in fahrenheite (v obe smeri)
+2. Računanje hipotenuze iz dveh katet (probi narest iz hipotenuze in katete)
+3. Iz vseh treh stranic trikotnika izračunaj ploščino le tega.
+
+Domače naloge: 
+1. Pretvarjanje iz EUR v USD (in obratno)
+2. Pretvarjanje iz litrov v galone (in obratno)
+3. Strel krogle (uporabnik vnese hitrost in kot, ti pa izračunaj razdaljo)
+4. Izračun obseg in ploščino kroga (uporabnik vnese radij)
+
+Če vam bo zmanjkalo nalog, mi napišite pa si bom probu zmislt še kako :)
+
+Za vprašanja sem vam na voljo kadarkoli na emailu.
+Rešitve shranite v txt ali pa cpp datoteko in mi jo kot priponko pošljite preko emaila
+
+Se vidimo v sredo 23. 3. ob 17:55 v avli.
+Za vse tiste, ki boste online (baje bo samo en), vam pa tud prilagam link.
+
+https://meet.google.com/jzd-bmnt-mob
+
+Lep pozdrav
+Kristjan
