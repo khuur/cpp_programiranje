@@ -39,9 +39,9 @@ int main() {
 
     string user_input = "";
 
-	// razlika je v tem, da cin ti prebere samo prvo besedo (oz. do prevag predsledka)
-    //cin >> user_input;
-    //getline(cin, user_input);
+	// razlika je v tem, da cin ti prebere samo prvo besedo (oz. do prvega predsledka)
+    // cin >> user_input;
+    // getline(cin, user_input);
 
     cout << "User input: " << user_input << endl;
 
