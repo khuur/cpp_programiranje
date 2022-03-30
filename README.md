@@ -15,3 +15,7 @@ Za code beautifier lahko uporabljate
 https://codebeautify.org/cpp-formatter-beautifier
 
 
+Vse predstavitve, ki sem jih naredil lahko najdete tako na githubu kot tudi na tem linku (gdrive)
+
+https://drive.google.com/drive/folders/1t_Lwpe-tOVLOKeFKfcoSCyXeohE8MTSq?usp=sharing
+
