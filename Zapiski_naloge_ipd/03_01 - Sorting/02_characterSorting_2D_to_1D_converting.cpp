@@ -1,11 +1,7 @@
 #include <cstring>
-
 #include <string>
-
 #include <iostream>
-
 #include <ctime>
-
 #include <cstdlib>
 
 using namespace std;

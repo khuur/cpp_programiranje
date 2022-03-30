@@ -1,7 +1,5 @@
 #include <cstring>
-
 #include <string>
-
 #include <iostream>
 
 using namespace std;
@@ -21,7 +19,6 @@ int main() {
         for (int j = 0; j < n - i - 1; j++) {
             if (strcmp(imena[j + 1], imena[j]) < 0) {
                 // strcpy("kam", "kaj");
-
                 strcpy(tmp, imena[j]);
                 strcpy(imena[j], imena[j + 1]);
                 strcpy(imena[j + 1], tmp);

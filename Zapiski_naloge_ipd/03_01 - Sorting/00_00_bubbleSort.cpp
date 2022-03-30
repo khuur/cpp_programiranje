@@ -1,13 +1,10 @@
-// Example program
 #include <iostream>
-
 #include <string>
-
 #include <ctime>
-
 #include <cstdlib>
 
 using namespace std;
+
 void izpis(int tab[]) {
     for (int i = 0; i < 10; i++)
         cout << tab[i] << "\t";
@@ -35,5 +32,6 @@ int main() {
         }
     }
     izpis(tab);
-
+	
+	return 0;
 }
