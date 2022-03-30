@@ -31,7 +31,7 @@ int main() {
         }
         for(int j = 0; j < (n - i) * 2 - 1; j++) {
 			// ce smo cist na zacektu al pa cist na koncu
-            if(j == 0 || j == (n - i) * 2 - 2){{
+            if(j == 0 || j == (n - i) * 2 - 2){
 				// izrisemo zvezdico
                 cout << "*";
             }

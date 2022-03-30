@@ -45,13 +45,14 @@ int main() {
 
     cout << "User input: " << user_input << endl;
 
+    niz = "benjamin";
+    cout << niz << endl;
 
-    niz = "Benjamin";
+	niz[0] = toupper(niz[0]);
+
+    cout << niz << endl;
 
     cout << niz.find('K') << endl;
 
-
-
-
-    return 1;
+    return 0;
 }
