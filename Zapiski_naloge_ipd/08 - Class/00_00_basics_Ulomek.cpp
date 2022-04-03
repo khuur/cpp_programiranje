@@ -41,7 +41,7 @@ class Ulomek {
         imenovalec = 1;
         cout << "To je prazen ulomek" << endl;
     }
-    
+
     // Druga vrsta konstruktorje je taka, da potrebuje enega ali več parametrov
     // Lahko imamo več konstruktorjev, če imajo različne parametre (tipe ali pa število parametrov)
     Ulomek(float stevec) {
@@ -54,24 +54,39 @@ class Ulomek {
         stevec = stevecc;
         imenovalec = imenovalecc;
     }
-	
+
+	// Kopirni konstruktor
+	// Naredi kopijo objekta
+	// S tem ubistvu override-amo default konstruktor.
+	// Default konstruktor naredi shallow copy (kaže na isti prostor v pomnilniku)
+	// Tale naš pa naredi deep copy (kar pomeni, da dejansko prepiše vrednosti v nov objekt)
+    Ulomek(Ulomek &u1) {
+        cout << "Sem v kopirnem konstruktorju" << endl;
+		stevec = u1.stevec;
+		imenovalec = u1.imenovalec;
+	}
+
 	// primer destruktorja
-	// Ta se sam pokliče, ko je konec programa 
+	// Ta se sam pokliče, ko je konec programa
 	// ali pa če mi izbrišemo s funkcijo delete (samo pod pogojem, da si ga kreiru z "new")
+
+    //The destructor does not have arguments.
+    //It has no return type not even void.
 	~Ulomek() {
+	    cout << stevec << "/" << imenovalec << "\n";
         cout << "Ej, brisem iz spomina" << endl;
     }
 
-    
+
     // primer funkcije, ki je dostopna tudi izven objekta (recimo iz maina)
     float getValue() {
         return (stevec / imenovalec);
     }
-	
+
 	// #TAG-1
 	// Tukej samo povemo, da bomo mel funkcijo, ki bo sestela 2 ulomka in vrnila nov ulomek.
 	Ulomek sestej(Ulomek drugi);
-    
+
     // Tole pa naredi to, da se ulomek lahko sešteje z drugim ulomkom.
     // c = a + b, pri čemer je a in b objekt tipa Ulomek.
     Ulomek operator + (Ulomek drugi) {
@@ -96,7 +111,7 @@ Ulomek Ulomek::sestej(Ulomek drugi){
         skupni_stevec = (stevec * drugi.imenovalec) + (drugi.stevec * imenovalec);
         skupni_imenovalec = (drugi.imenovalec * imenovalec);
     }
-    
+
 	Ulomek nov_ulomek(skupni_stevec, skupni_imenovalec);
     return nov_ulomek;
 }
@@ -104,9 +119,25 @@ Ulomek Ulomek::sestej(Ulomek drugi){
 
 int main() {
     // če želiš klicat konstruktor brez parametrov ne rabiš dat niti oklepajev.
-    //Ulomek prvi;
-    //Ulomek drugi(3.0, 4.0);
-    //Ulomek tretji(2.0, 3.0);
+    Ulomek prvi;
+    // Lahko narediš tudi nov Ulomek in potem samo rečeš, da naj 'drugi' kaže na ta prostor v pomnilniku.
+    // Če to narediš na tak način, lahko tudi explicitno pokličeš 'delete drugi;' in bo takrat izbrisalo iz pomnillnika.
+    // Destruktorji se pa drugač kličejo sami od sebe
+    //              (navadno ob koncu programa, ampak lahko pa tud kej prej (recimo, da gre vn iz scope-a od for-a))
+    Ulomek *drugi = new Ulomek(111.0, 22223.0);
+    Ulomek tretji(2.0, 3.0);
+
+	Ulomek cetrti = tretji;
+
+	cout << tretji.getValue() << endl;
+	cout << cetrti.getValue() << endl;
+
+	tretji = tretji + *drugi;
+
+	delete drugi;
+
+	cout << tretji.getValue() << endl;
+	cout << cetrti.getValue() << endl;
 
     //Ulomek sestevek = drugi + tretji;
     //sestevek.value();

@@ -1,5 +1,0 @@
-virtual function
-čista virtualna funkcija
-abstract function 
-kopirni konstruktor
-how to trigger destruct

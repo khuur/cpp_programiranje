@@ -54,5 +54,15 @@ int main() {
 
     cout << niz.find('K') << endl;
 
+
+	string datum = "2022-03-30";
+    string leto = datum.substr(0,4);
+    string mesec = datum.substr(5,2);
+    string dan = datum.substr(8,2);
+
+    cout << leto << endl;
+    cout << mesec << endl;
+    cout << dan << endl;
+
     return 0;
 }

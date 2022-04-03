@@ -1,0 +1,33 @@
+#include<iostream>
+
+using namespace std;
+
+int main() {
+
+
+    // uporabnik bo vnasal stevila
+    // Ko vnese 0, naj mu izpiše največje stevilo
+
+    int max_stevilo = 0;
+    int uporabnikovo_stevilo;
+
+    while(true) {
+
+        cout << "Prosim vnesi stevilo: ";
+        cin >> uporabnikovo_stevilo;
+
+        if(uporabnikovo_stevilo == 0) {
+            break;
+        }
+
+        if(uporabnikovo_stevilo > max_stevilo) {
+            max_stevilo = uporabnikovo_stevilo;
+        }
+    }
+
+    cout << "Najvecje vpisano stevilo: " << max_stevilo << endl;
+
+
+
+    return 0;
+}

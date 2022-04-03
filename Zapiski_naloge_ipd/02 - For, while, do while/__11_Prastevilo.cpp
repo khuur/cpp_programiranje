@@ -1,0 +1,1 @@
+//Napiši	program,	ki	za	podano	število	pove,	ali	je	praštevilo
