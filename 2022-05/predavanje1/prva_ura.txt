@@ -1,0 +1,53 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+
+    cout << "Pozdravljeni! " << endl;
+
+    // cout << "Pozdravljeni " << "na " << "tecaju C++" << endl;
+
+    // cout << 5 + (7 - 3) << endl;
+
+    // cout << 5 + (3 * 10) << endl;
+
+    /*
+        cout << 5 / 2 << endl;
+
+        cout << 5.0 / 2 << endl;
+        cout << 5 / 2.0 << endl;
+        cout << 5.0 / 2.0 << endl;
+
+        cout << 5 % 2 << endl;
+    */
+
+
+
+    // cout << sqrt(9) << endl;
+
+    // cout << pow(2, 10) << endl;
+
+
+    // matematicne: sin, cos, M_PI, log, log2, pow, sqrt
+    // zaokrozevanje: floor, round, ceil, trunc
+
+    //cout << floor(M_PI) << endl;
+    //cout << round(3.64) << endl;
+    //cout << floor(-3.20) << endl;
+
+    cout << (2 == 5) << endl;
+    cout << (2 != 5) << endl;
+    
+    cout << (2 < 5) << endl;
+    cout << (2 <= 5) << endl;
+    
+    cout << (2 > 5) << endl;
+    cout << (2 >= 5) << endl;
+
+
+
+
+    return 0;
+}
