@@ -24,7 +24,6 @@ fstream read_file;
 ofstream new_file;
 ifstream my_input_file;
 string path;
-
 void readingTxtFile(string filepath)
 {
 	my_input_file.open(filepath.c_str()); 	
@@ -47,7 +46,7 @@ void readingTxtFile(string filepath)
 void fillTxtFile(string filepath)
 {
 	file.open(filepath.c_str());
-	char crka;
+	char crka = 'a';
 	
 	for(int i = 0; i < 100; i++)
 	{
@@ -88,11 +87,33 @@ void onlySloveneCharacters(string filepath, string filepathnew)
 }
 void removingCharactersWithPointers(string filepath, string filepathnew)
 {
-	
-	// TODO
+	string to_write = "";
+	read_file.open(filepath.c_str(), ios::in);
+	new_file.open(filepathnew.c_str(), ios::trunc);
+	string line;
+	while(getline(read_file, line))
+	{
+		cout << "line: " << line;
+		
+		
+		for(int i = 0; i < 100; i++)
+		{
+			char x = line.at(i);
+			//cout << x << endl;
+			if(x == 'X' || x == 'Y' || x == 'W' || x == 'Q')
+			{
+				new_file << '_';
+			}
+			else
+			{
+				new_file << x;
+			}
+		}
+		
+	}
+	read_file.close();
+	new_file.close();
 }
-
-// iz "je" v "pa"
 void izJevPa()
 {
 	string to_write = "";
@@ -106,7 +127,7 @@ void izJevPa()
 	while(getline(read_file, line))
 	{
 		// si shraniš kje je ostal aka od kje more it naslednjic naprej brat
-		next_pos = read_file.tellg(); 
+		next_pos = read_file.tellg(); // 27
 		cout << "line: " << line << endl;
 		
 		// gremo character by character
@@ -168,8 +189,6 @@ int main()
 	fillTxtFile("name.txt");
 	onlySloveneCharacters("name.txt", "new_name.txt");
 	readingTxtFile("name.txt");
-	
-	// iz "je" v "pa"
 	izJevPa();
 	
 	return 0;

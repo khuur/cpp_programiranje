@@ -1,0 +1,106 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void funkcija (string file);
+{ int i=0, x=100, z;
+  fstream datoteka;
+  datoteka.open("", ios::in);
+  for (i; i<x; i++)
+  {if (struktura.st_preb[i]>struktura.st_preb[i-1])
+      z=i;
+   if (datoteka.eof()==1) x=100;}
+  cout<<"Ime obcine: "<<sturktura.ime[z]<<endl;
+  cout<<"St preb.: "<<struktura.st_preb[z]<<endl;
+  cout<<"velikost (km^2): "<<struktura.velikost[z]<<endl;
+  datoteka.close();
+}
+
+void brisanje (string file)
+{ string imena [5], prebivalci [5],velikost1 [5];
+    int i,j;
+  fstream datoteka;
+  datoteka.open("", ios::in);
+  for (i=0; i<5; i++)
+  {imena[i]<<struktura.ime[i];
+      prebivalci[i]<<struktura.st_preb[i];
+      velikost1[i]<<struktura.velikost[i];}
+  datoteka.close();
+  datoteka.open("", ios::out|ios::trunc);
+  getline(cin, imena[0]);
+  datoteka<<imena[0]<<endl;
+  getline(cin, prebivalci[0]);
+  datoteka<<prebivalci[0]<<endl;
+  getline(cin, velikost1[0]);
+  datoteka<<velikost1[0]<<endl;
+  for (j=1; j<5; j++)
+  {datoteka<<imena[i]<<endl;
+   datoteka<<prebivalci[i]<<endl;
+   datoteka<<velikost1[i]<<endl;}
+  datoteka.close();
+}
+   
+int main()
+{string file;
+    fstream datoteka;
+    datoteka.open("", ios::in);
+    file<<datoteka;
+    funkcija (file);
+    brisanje (file);
+    return 0;
+}
+
+
+
+
+
+
+
+
+#include <iostream>
+#include <string>
+#include <fstream>
+
+using namespace std;
+
+fstream datoteka;
+struct struktura1
+{
+    string ime_izdelka, model_izdelka;
+    int cena;
+}struktura;
+
+void vnos(struktura1 struktura)
+{datoteka.open("C:\\Users\\Klemen\\Desktop\\DATA.dat", ios::out | ios::binary);
+    for (int i=0; i<5; i++)
+    { cout<<"vnesite ime: ";
+      getline (cin, struktura.ime_izdelka);
+      datoteka<<struktura.ime_izdelka;
+      cout<<"vnesite model: ";
+      getline (cin, struktura.model_izdelka);
+      datoteka<<struktura.model_izdelka;
+      cout<<"vnesite ceno: ";
+      cin>>struktura.cena;
+      datoteka<<struktura.cena;
+      fflush(stdin);
+      cout<<endl;}
+    datoteka.close();
+}
+
+int main()
+{fstream kopi;
+    vnos (struktura);
+    datoteka.open("C:\\Users\\Klemen\\Desktop\\DATA.dat", ios::in | ios::binary);
+    kopi.open("C:\\Users\\Klemen\\Desktop\\kopi.dat", ios::out | ios::binary);
+    for (int i=0; i<5; i++)
+    {if (struktura.cena>10000)
+        {kopi<<struktura.ime_izdelka[i]<<endl;
+            kopi<<struktura.model_izdelka[i]<<endl;
+            kopi<<struktura.cena<<endl;}}
+    datoteka.close();
+    kopi.close();
+    return 0;
+}
+
+

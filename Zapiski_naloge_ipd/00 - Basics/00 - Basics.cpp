@@ -82,7 +82,7 @@ cout << "-------------" << endl;
 cout << "uporaba zunanjih knjiznic " << endl;
 cout << "-------------" << endl;
 cout << pow(2, 10) << endl;
-cout << stqr(9) << endl;
+cout << sqrt(9) << endl;
 
 // #include<cmath>
 // https://www.programiz.com/cpp-programming/library-function/cmath
@@ -97,7 +97,7 @@ cout << "-------------" << endl;
 // To je fajn, ampak ni pa še neki ful uporabno
 
 // Preden se lotimo vpisovanja iz tipkovnice v program, mormo pripravit prostor
-// kam se bo zo shranilo
+// kam se bo to shranilo
 
 // en način, da si predstavljate kaj so spremenljivke je tko, da si predstavljate
 // eno omaro v kateri so predali. Na predalu piše ime spremenljivke in notr je listek

@@ -26,12 +26,16 @@ class ClassD : public ClassB, public ClassC {
 int main()
 {
     ClassD obj;
+	
+	obj.a = 10;
+	
+	
  
     // obj.a = 10;                  // Statement 1, Error
     // obj.a = 100;                 // Statement 2, Error
  /*
-	 Tukej mu moreš povedat KATER TOČNO a nej ti zdej spremeni, ker ma dostop do dveh različnih ajev.
-	 Zakaj? Ker je ClassD sestavvljen iz ClassC in Class B. ž
+	 Tukej mu moreš povedat KATER TOČNO a nej ti zdej spremeni, ker ma dostop do dveh različnih a-jev.
+	 Zakaj? Ker je ClassD sestavljen iz ClassC in ClassB. 
 	 Tako B kot C sta narejena iz A-ja, torej imata oba njegov public value 'a';
 	 Potemtakem ima obj:
 		2x (1x od Cja in 1x od Bja) vrednost 'a',
