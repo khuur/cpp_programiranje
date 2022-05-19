@@ -53,6 +53,12 @@ int main() {
     cout << niz << endl;
 
     cout << niz.find('K') << endl;
+	
+	// V primeru, da ne najde crke, bi mogu vrnt -1, ampak C++ vrne  mal drugač
+	// Spodnji primer prikazuje string, ki ga ni v mojem priimku, tko da nam izpiše "1", ker je RES, da je to enako npos-u aka -1
+	cout << (priimek.find("Blexx")  == std::string::npos) << endl;
+    
+
 
 
 	string datum = "2022-03-30";
