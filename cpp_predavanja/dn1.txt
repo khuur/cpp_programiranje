@@ -1,0 +1,42 @@
+#include <iostream>
+#include <cmath>
+
+
+using namespace std;
+
+int main() {
+
+
+
+    float hitrost, kot_v_stopinjah, kot_v_radianih;
+    float g = 9.81;
+
+
+    cout << "Prosim vnesi kot v stopinjah: ";
+    cin >> kot_v_stopinjah;
+
+    kot_v_radianih = kot_v_stopinjah * M_PI / 180;
+
+    cout << "kot_v_radianih" << endl;
+    cout << kot_v_radianih << endl;
+
+    cout << "Prosim vnesi hitrost [m/s]: ";
+    cin >> hitrost;
+
+    cout << "hitrost: " << hitrost << "m/s" << endl;
+
+
+    float razdalja = (sin(kot_v_radianih * 2) * pow(hitrost, 2)) / g;
+
+    cout << "razdalja: " << razdalja << endl;
+
+
+
+
+
+
+
+
+
+
+}

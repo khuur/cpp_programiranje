@@ -1,0 +1,26 @@
+    #include <iostream>
+    #include <cmath>
+
+    using namespace std;
+
+    int main() {
+
+        bool ali_sem_moski = true;
+
+        if(ali_sem_moski) {
+            cout << "hey man" << endl;
+        } else {
+            cout << "hey woman" << endl;
+        }
+
+
+        bool ali_sem_zenska = false;
+
+        if(!ali_sem_zenska) {
+            cout << "hey man 2" << endl;
+        } else {
+            cout << "hey woman 2" << endl;
+        }
+
+
+    }

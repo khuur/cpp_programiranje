@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+
+
+    char crka = 'h';
+
+    cout << "crka: " << crka << endl;
+
+    if(crka > 'a' && crka < 'z') {
+
+        crka = crka - 32;
+
+    }
+    cout << "crka: " << crka << endl;
+
+
+
+    return 0;
+}

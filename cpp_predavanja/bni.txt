@@ -1,0 +1,39 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+
+    float visina;
+    float teza = 93;
+
+    cout << "Vnesi visino: ";
+    cin >> visina;
+
+    float visina_v_metrih;
+
+    if(visina > 100) {
+        visina_v_metrih = visina / 100;
+    } else {
+        visina_v_metrih = visina;
+    }
+
+    float bmi = teza / pow(visina_v_metrih, 2);
+
+    cout << "bmi: " << bmi << endl;
+
+    if(bmi > 25) {
+        cout << "predebel si" << endl;
+    } else if(bmi < 18.5){
+        cout << "presuh si" << endl;
+    } else {
+        cout << "glih prou te je" << endl;
+    }
+
+
+    
+    
+    
+
+}

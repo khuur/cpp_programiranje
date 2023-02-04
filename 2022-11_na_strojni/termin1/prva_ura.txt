@@ -1,0 +1,54 @@
+#include <iostream> //MW
+#include <cmath>
+#include <iomanip>
+using namespace std; //MW
+
+int main() { //MW
+
+	cout << "pozdravljeni" << endl;
+
+    /*
+	cout << 4 + 5 << endl;
+
+	cout << 8 - 6 << endl;
+
+	// cout << 14 - 3;
+	// cout << 14 - 3;
+
+	// cout << endl;
+
+	cout << sqrt(3) << endl << "zibjo " << endl;
+
+
+	cout << 5 * 7 << endl;
+
+	cout << 16 / 7 << endl;
+	cout << 16 % 7 << endl;
+
+	cout << "+-----------------" << endl;
+
+	cout << 16 / 7.0 << endl;
+    */
+
+	// cout << (5 + 3) * 2 << endl;
+
+    // cout << (5 >= 3) << endl;
+    // cout << (5 <= 3) << endl;
+
+    //cout << (5 == 3) << endl;
+    // cout << (!(5 > 3)) << endl;
+
+
+    int stevilo1 = 10;
+    int stevilo2 = 20;
+
+    cout << "stevilo1: " << stevilo1 << endl;
+
+    cout << "stevilo2: " << stevilo2 << endl;
+
+    cout << "sestevek: " << (stevilo1 + stevilo2) << endl;
+
+
+
+	return 0;//MW
+}//MW
