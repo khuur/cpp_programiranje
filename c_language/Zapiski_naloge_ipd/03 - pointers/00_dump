@@ -1,0 +1,10 @@
+
+    float f = 15, *k;
+    k = 10;
+
+    printf("k: %.2f\n", k);
+    k = &f;
+
+
+    printf("f: %.2f\n", f);
+    printf("k: %.2f\n", &k);
