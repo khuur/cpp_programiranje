@@ -40,7 +40,7 @@ Spremenljivke v jeziku C so kategorizirane v več različnih tipov, vključno z:
 #include<stdio.h>
 int main() {
     int a = 10;
-    printf("Vrednost a: %d\\n", a);
+    printf("Vrednost a: %d\n", a);
     return 0;
 }
 ```
@@ -51,7 +51,7 @@ int main() {
 #include<stdio.h>
 int main() {
     short a = 5;
-    printf("Vrednost a: %d\\n", a);
+    printf("Vrednost a: %d\n", a);
     return 0;
 }
 ```
@@ -62,7 +62,7 @@ int main() {
 #include<stdio.h>
 int main() {
     long a = 1000000L;
-    printf("Vrednost a: %ld\\n", a);
+    printf("Vrednost a: %ld\n", a);
     return 0;
 }
 ```
@@ -119,7 +119,7 @@ Glede na potrebe vašega programa lahko izberete med `float` in `double`. Če po
 #include<stdbool.h>
 int main() {
     bool a = true;
-    printf("Vrednost a: %d\\n", a);
+    printf("Vrednost a: %d\n", a);
     return 0;
 }
 ```
@@ -132,7 +132,7 @@ int main() {
 #include<stdio.h>
 int main() {
     char a = 'A';
-    printf("Vrednost a: %c\\n", a);
+    printf("Vrednost a: %c\n", a);
     return 0;
 }
 ```
@@ -152,7 +152,7 @@ Obstaja več različnih vrst operatorjev v jeziku C, ki jih lahko uporabimo, vkl
 int main() {
     int a = 5, b = 5;
     if (a == b) {
-        printf("a in b sta enaka\\n");
+        printf("a in b sta enaka\n");
     }
     return 0;
 }
@@ -165,7 +165,7 @@ int main() {
 int main() {
     int a = 5, b = 6;
     if (a != b) {
-        printf("a in b nista enaka\\n");
+        printf("a in b nista enaka\n");
     }
     return 0;
 }
@@ -178,7 +178,7 @@ int main() {
 int main() {
     int a = 4, b = 5;
     if (a < b) {
-        printf("a je manjše od b\\n");
+        printf("a je manjše od b\n");
     }
     return 0;
 }
@@ -191,7 +191,7 @@ int main() {
 int main() {
     int a = 6, b = 5;
     if (a > b) {
-        printf("a je večje od b\\n");
+        printf("a je večje od b\n");
     }
     return 0;
 }
@@ -204,7 +204,7 @@ int main() {
 int main() {
     int a = 5, b = 5;
     if (a <= b) {
-        printf("a je manjše ali enako b\\n");
+        printf("a je manjše ali enako b\n");
     }
     return 0;
 }
@@ -217,7 +217,7 @@ int main() {
 int main() {
     int a = 6, b = 5;
     if (a >= b) {
-        printf("a je večje ali enako b\\n");
+        printf("a je večje ali enako b\n");
     }
     return 0;
 }
@@ -232,7 +232,7 @@ int main() {
 int main() {
     int a = 5, b = 6;
     if (a < 10 && b < 10) {
-        printf("Oba a in b sta manjša od 10\\n");
+        printf("Oba a in b sta manjša od 10\n");
     }
     return 0;
 }
@@ -245,7 +245,7 @@ int main() {
 int main() {
     int a = 15, b = 6;
     if (a < 10 || b < 10) {
-        printf("Ali a ali b je manjše od 10\\n");
+        printf("Ali a ali b je manjše od 10\n");
     }
     return 0;
 }
@@ -258,7 +258,7 @@ int main() {
 int main() {
     int a = 5;
     if (!a == 10) {
-        printf("a ni enako 10\\n");
+        printf("a ni enako 10\n");
     }
     return 0;
 }
@@ -272,7 +272,7 @@ int main() {
 #include<stdio.h>
 int main() {
     int a = 5;
-    printf("Vrednost a: %d\\n", a);
+    printf("Vrednost a: %d\n", a);
     return 0;
 }
 ```
@@ -284,7 +284,7 @@ int main() {
 int main() {
     int a = 5;
     a += 5; // a = a + 5
-    printf("Vrednost a: %d\\n", a);
+    printf("Vrednost a: %d\n", a);
     return 0;
 }
 ```
@@ -296,7 +296,7 @@ int main() {
 int main() {
     int a = 10;
     a -= 5; // a = a - 5
-    printf("Vrednost a: %d\\n", a);
+    printf("Vrednost a: %d\n", a);
     return 0;
 }
 ```
@@ -308,7 +308,7 @@ int main() {
 int main() {
     int a = 5;
     a *= 5; // a = a * 5
-    printf("Vrednost a: %d\\n", a);
+    printf("Vrednost a: %d\n", a);
     return 0;
 }
 ```
@@ -320,7 +320,7 @@ int main() {
 int main() {
     int a = 10;
     a /= 5; // a = a / 5
-    printf("Vrednost a: %d\\n", a);
+    printf("Vrednost a: %d\n", a);
     return 0;
 }
 ```
@@ -332,7 +332,7 @@ int main() {
 int main() {
     int a = 10;
     a %= 3; // a = a % 3
-    printf("Vrednost a: %d\\n", a);
+    printf("Vrednost a: %d\n", a);
     return 0;
 }
 ```
@@ -345,7 +345,7 @@ int main() {
 #include<stdio.h>
 int main() {
     int a = 12, b = 25;
-    printf("Vrednost a&b: %d\\n", a&b);
+    printf("Vrednost a&b: %d\n", a&b);
     return 0;
 }
 ```
@@ -356,7 +356,7 @@ int main() {
 #include<stdio.h>
 int main() {
     int a = 12, b = 25;
-    printf("Vrednost a|b: %d\\n", a|b);
+    printf("Vrednost a|b: %d\n", a|b);
     return 0;
 }
 ```
@@ -367,7 +367,7 @@ int main() {
 #include<stdio.h>
 int main() {
     int a = 12, b = 25;
-    printf("Vrednost a^b: %d\\n", a^b);
+    printf("Vrednost a^b: %d\n", a^b);
     return 0;
 }
 ```
@@ -378,7 +378,7 @@ int main() {
 #include<stdio.h>
 int main() {
     int a = 12;
-    printf("Vrednost ~a: %d\\n", ~a);
+    printf("Vrednost ~a: %d\n", ~a);
     return 0;
 }
 ```
@@ -389,7 +389,7 @@ int main() {
 #include<stdio.h>
 int main() {
     int a = 12;
-    printf("Vrednost a<<1: %d\\n", a<<1);
+    printf("Vrednost a<<1: %d\n", a<<1);
     return 0;
 }
 ```
@@ -400,7 +400,7 @@ int main() {
 #include<stdio.h>
 int main() {
     int a = 12;
-    printf("Vrednost a>>1: %d\\n", a>>1);
+    printf("Vrednost a>>1: %d\n", a>>1);
     return 0;
 }
 ```
