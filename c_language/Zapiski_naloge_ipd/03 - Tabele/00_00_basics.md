@@ -8,10 +8,10 @@ Tabelo deklariramo s podajanjem tipa elementov, ki jih bo tabela vsebovala, in i
 
 ### Primer deklaracije in inicializacije tabele:
 
-\```c
+```c
 // Deklaracija in inicializacija tabele s 5 celimi števili
 int tabela[5] = {1, 2, 3, 4, 5};
-\```
+```
 
 ## Dostopanje do elementov tabele
 
@@ -19,7 +19,7 @@ Do elementov tabele dostopamo s pomočjo indeksiranja. Indeksiranje se začne z 
 
 ### Primer dostopanja do elementov tabele:
 
-\```c
+```c
 int tabela[5] = {1, 2, 3, 4, 5};
 
 // Dostop do posameznih elementov tabele
@@ -30,7 +30,7 @@ int drugi_element = tabela[1]; // Vrednost drugega elementa (2)
 for (int i = 0; i < 5; i++) {
     printf("Element %d: %d\\n", i + 1, tabela[i]);
 }
-\```
+```
 
 ## Večdimenzionalne tabele
 
@@ -38,7 +38,7 @@ Poleg enodimenzionalnih tabel lahko v jeziku C ustvarimo tudi večdimenzionalne 
 
 ### Primer večdimenzionalne tabele:
 
-\```c
+```c
 // Deklaracija in inicializacija 2D tabele s 3 vrsticami in 4 stolpci
 int tabela_2d[3][4] = {
     {1, 2, 3, 4},
@@ -48,7 +48,7 @@ int tabela_2d[3][4] = {
 
 // Dostop do elementov večdimenzionalne tabele
 int vrednost = tabela_2d[1][2]; // Vrednost elementa v drugi vrstici in tretjem stolpcu (7)
-\```
+```
 
 ## Dinamične tabele
 
@@ -56,7 +56,7 @@ V C-ju lahko tudi ustvarjamo dinamične tabele, kjer določimo velikost tabele m
 
 ### Primer dinamične tabele:
 
-\```c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -81,7 +81,7 @@ int main() {
 
     return 0;
 }
-\```
+```
 
 ## Uporaba tabel v funkcijah
 
@@ -89,7 +89,7 @@ Tabele lahko uporabimo tudi v funkcijah, tako da jih podamo kot argumente funkci
 
 ### Primer uporabe tabele v funkcijah:
 
-\```c
+```c
 #include <stdio.h>
 
 // Funkcija za izpis tabele
@@ -108,4 +108,4 @@ int main() {
 
     return 0;
 }
-\```
+```
