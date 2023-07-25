@@ -1,4 +1,4 @@
-// Ta program izračuna kvadratno korenino števila.
+// Ta program izračuna kvadratni koren števila.
 
 // Uvozimo knjižnico math.h, ki vsebuje funkcijo sqrt().
 #include <math.h>
@@ -12,10 +12,10 @@ int main() {
   double stevilo;
   scanf("%lf", &stevilo);
 
-  // Izračunamo kvadratno korenino števila.
+  // Izračunamo kvadratni koren števila.
   double kvadratna_korenina = sqrt(stevilo);
 
-  // Izpišemo kvadratno korenino na zaslon.
+  // Izpišemo kvadratni koren na zaslon.
   printf("Kvadratna korenina %f je %f\n", stevilo, kvadratna_korenina);
 
   // Vrnemo vrednost 0.

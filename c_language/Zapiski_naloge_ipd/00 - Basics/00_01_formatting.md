@@ -3,7 +3,7 @@
     #include <stdio.h>
 
     int main() {
-        printf("Hello, world!\\n");
+        printf("Hello, world!\n");
         // Output: "Hello, world!"
         return 0;
     }
@@ -14,7 +14,7 @@
 
     int main() {
         int num = 50;
-        printf("The number is: %d\\n", num);
+        printf("The number is: %d\n", num);
         // Output: "The number is: 50"
         return 0;
     }
@@ -25,7 +25,7 @@
 
     int main() {
         float num = 50.5;
-        printf("The number is: %.2f\\n", num);
+        printf("The number is: %.2f\n", num);
         // Output: "The number is: 50.50"
         return 0;
     }
@@ -36,7 +36,7 @@
 
     int main() {
         char character = 'A';
-        printf("The character is: %c\\n", character);
+        printf("The character is: %c\n", character);
         // Output: "The character is: A"
         return 0;
     }
@@ -48,7 +48,7 @@
     int main() {
         int age = 20;
         float gpa = 3.5;
-        printf("Age: %d, GPA: %.2f\\n", age, gpa);
+        printf("Age: %d, GPA: %.2f\n", age, gpa);
         // Output: "Age: 20, GPA: 3.50"
         return 0;
     }
@@ -59,7 +59,7 @@
 
     int main() {
         char *name = "John Doe";
-        printf("Name: %s\\n", name);
+        printf("Name: %s\n", name);
         // Output: "Name: John Doe"
         return 0;
     }
@@ -70,7 +70,7 @@
 
     int main() {
         int day = 15, month = 3, year = 2023;
-        printf("Date: %02d/%02d/%04d\\n", day, month, year);
+        printf("Date: %02d/%02d/%04d\n", day, month, year);
         // Output: "Date: 15/03/2023"
         return 0;
     }
@@ -81,7 +81,7 @@
 
     int main() {
         int num = 255;
-        printf("Hexadecimal: %x\\n", num);
+        printf("Hexadecimal: %x\n", num);
         // Output: "Hexadecimal: ff"
         return 0;
     }
@@ -92,7 +92,7 @@
 
     int main() {
         double num = 3000.75;
-        printf("Scientific notation: %e\\n", num);
+        printf("Scientific notation: %e\n", num);
         // Output: "Scientific notation: 3.000750e+03"
         return 0;
     }
@@ -103,7 +103,7 @@
 
     int main() {
         double percentage = 0.85;
-        printf("Percentage: %.2f%%\\n", percentage * 100);
+        printf("Percentage: %.2f%%\n", percentage * 100);
         // Output: "Percentage: 85.00%"
         return 0;
     }
@@ -113,7 +113,7 @@
     #include <stdio.h>
 
     int main() {
-        printf("%20s\\n", "Hello, world!");
+        printf("%20s\n", "Hello, world!");
         // Output: "       Hello, world!"
         return 0;
     }
@@ -123,7 +123,7 @@
     #include <stdio.h>
 
     int main() {
-        printf("%-20s\\n", "Hello, world!");
+        printf("%-20s\n", "Hello, world!");
         // Output: "Hello, world!       "
         return 0;
     }
@@ -134,7 +134,7 @@
 
     int main() {
         char *str = "Hello, world!";
-        printf("%.5s\\n", str);
+        printf("%.5s\n", str);
         // Output: "Hello"
         return 0;
     }
@@ -145,7 +145,7 @@
 
     int main() {
         int num = 10;
-        printf("Address: %p\\n", (void*)&num);
+        printf("Address: %p\n", (void*)&num);
         // Output: "Address: 0x7ffeefbff58c" (example address)
         return 0;
     }
@@ -155,9 +155,9 @@
     #include <stdio.h>
 
     int main() {
-        printf("%-10s | %10s | %10s\\n", "Product", "Quantity", "Price");
-        printf("%-10s | %10d | %10.2f\\n", "Apples", 10, 1.25);
-        printf("%-10s | %10d | %10.2f\\n", "Bananas", 5, 0.75);
+        printf("%-10s | %10s | %10s\n", "Product", "Quantity", "Price");
+        printf("%-10s | %10d | %10.2f\n", "Apples", 10, 1.25);
+        printf("%-10s | %10d | %10.2f\n", "Bananas", 5, 0.75);
         // Output: 
         // "Product    |   Quantity |      Price"
         // "Apples     |         10 |       1.25"
@@ -171,7 +171,7 @@
 
     int main() {
         for (int i = 0; i < 5; i++) {
-            printf("Iteration: %d\\n", i + 1);
+            printf("Iteration: %d\n", i + 1);
         }
         // Output: 
         // "Iteration: 1"
@@ -190,7 +190,7 @@
     int main() {
         time_t now = time(NULL);
         struct tm *t = localtime(&now);
-        printf("%02d:%02d:%02d\\n", t->tm_hour, t->tm_min, t->tm_sec);
+        printf("%02d:%02d:%02d\n", t->tm_hour, t->tm_min, t->tm_sec);
         // Output: "13:26:32" (current time)
         return 0;
     }
@@ -201,7 +201,7 @@
 
     int main() {
         int width = 5;
-        printf("%*s\\n", width, "Hi");
+        printf("%*s\n", width, "Hi");
         // Output: "   Hi" (width of 5)
         return 0;
     }
@@ -213,7 +213,7 @@
     int main() {
         double num = 1.23456;
         int precision = 3;
-        printf("%.*f\\n", precision, num);
+        printf("%.*f\n", precision, num);
         // Output: "1.235" (3 decimal places)
         return 0;
     }
@@ -224,7 +224,7 @@
 
     int main() {
         long long int big_num = 123456789012345LL;
-        printf("Big number: %lld\\n", big_num);
+        printf("Big number: %lld\n", big_num);
         // Output: "Big number: 123456789012345"
         return 0;
     }
@@ -235,7 +235,7 @@
 
     int main() {
         double num = 3.14159265;
-        printf("Pi: %.5f\\n", num);
+        printf("Pi: %.5f\n", num);
         // Output: "Pi: 3.14159"
         return 0;
     }
@@ -246,7 +246,7 @@
 
     int main() {
         char c = 'A';
-        printf("ASCII value of %c: %d\\n", c, c);
+        printf("ASCII value of %c: %d\n", c, c);
         // Output: "ASCII value of A: 65"
         return 0;
     }
@@ -258,8 +258,8 @@
 
     int main() {
         double complex z = 1.0 + 2.0*I;
-        printf("Real part: %.2f\\n", creal(z));
-        printf("Imaginary part: %.2f\\n", cimag(z));
+        printf("Real part: %.2f\n", creal(z));
+        printf("Imaginary part: %.2f\n", cimag(z));
         // Output: 
         // "Real part: 1.00"
         // "Imaginary part: 2.00"
@@ -274,7 +274,7 @@
         for (int i = 31; i >= 0; i--) {
             printf("%d", (num >> i) & 1);
         }
-        printf("\\n");
+        printf("\n");
     }
 
     int main() {
@@ -291,9 +291,9 @@
         unsigned char *bytes = (unsigned char*)mem;
         for (size_t i = 0; i < len; i++) {
             printf("%02x ", bytes[i]);
-            if ((i + 1) % 16 == 0) printf("\\n");
+            if ((i + 1) % 16 == 0) printf("\n");
         }
-        printf("\\n");
+        printf("\n");
     }
 
     int main() {
